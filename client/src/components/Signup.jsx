@@ -5,18 +5,28 @@ export default class Signup extends Component {
 
   state = {
     email: "",
-    password: ""
+    password: "",
+    errorMessage: ""
   }
 
-  handleSubmit = () => {
+  handleSubmit = event => {
+    event.preventDefault();
     const { email, password } = this.state;
     axios.post({
-      url: "",
+      url: "/authentication/signup",
       method: "POST",
       data: {
         email,
         password
       }
+    })
+    .then((response) => {
+      this.props.history.push('/profile'); 
+    })
+    .catch((error) => {
+      this.setState({
+        errorMessage: error.response.data.message
+      });
     });
   };
 
@@ -30,13 +40,14 @@ export default class Signup extends Component {
       // JSX
       return (
           <div>
-            <h1> I am the Signup Component </h1>
+            <h1> Signup Component </h1>
             <form onSubmit={this.handleSubmit}>
               <input type="text" name="email" onChange={this.handleChange} />
               <input type="password" name="password" onChange={this.handleChange} />
 
               <button>Signup</button>
             </form>
+            <p>{this.state.errorMessage}</p>
           </div>
       );
     }

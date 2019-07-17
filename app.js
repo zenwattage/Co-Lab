@@ -13,7 +13,7 @@ const log = console.log;
 const app = express();
 
 
-mongoose.connect('mongodb://localhost/colab-authentication', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/authentication-example', {useNewUrlParser: true});
 
 
 //app.set('PORT', process.env.PORT || 8080);
