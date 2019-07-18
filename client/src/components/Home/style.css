@@ -1,7 +1,9 @@
+/* CoLab logo font ///////////////////////////////////////////////////////////////////////////// */
 .logo {
     color: white;
 }
 
+/* Welcome statement ////////////////////////////////////////////////////////////////////////// */
 @font-face {
   font-family: 'Sketch Block';
   src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot');
@@ -10,7 +12,6 @@
        url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.ttf') format('truetype'),
        url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.svg#SketchBlockBold') format('svg');
 }
-
 @font-face {
   font-family: 'Museo 700';
   src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot');
@@ -19,7 +20,6 @@
        url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.ttf') format('truetype'),
        url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.svg#SketchBlockBold') format('svg');
 }
-
 @font-face {
   font-family: 'CallunaRegular';
   src: url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.eot');
@@ -28,22 +28,18 @@
        url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.ttf') format('truetype'),
        url('http://tangledindesign.com/codepen/fonts/Calluna-Regular-webfont.svg#CallunaRegular') format('svg');
 }
-
 body {
   background: rgb(73, 73, 73);
   color: #72CC7E;
 }
-
 .community {
     color: lightgray;
 }
-
   .container {
       width: 590px;
       margin: 140px auto;
       position: relative;
   }
-
   blockquote {
       width: 565px;
       font: 2.55em CallunaRegular;
@@ -57,7 +53,6 @@ body {
       -webkit-transform: rotate(-3deg);
       -moz-transform: rotate(-3deg);
   }
-
   .container:before {
       content: "";
       font-size: 13em;
@@ -65,7 +60,6 @@ body {
       left: -100px;
       color: #666;
   }
-
   .container:after {
       content: "";
       font-size: 13em;
@@ -74,12 +68,10 @@ body {
       top: 150px;
       color: #666;
   }
-
       blockquote:first-line {
           font: 1.85em "Sketch Block";
           color: lightgray;
       }
-
       blockquote:first-letter {
           font-size: 2.9em;
           text-transform: lowercase;
@@ -89,60 +81,65 @@ body {
           position: relative;
           z-index: 1;
       }
-
       blockquote strong:first-child {
           margin-left: 8px;
           letter-spacing: 0;
       }
-
       blockquote strong:last-child {
           font: 2em "Museo 700";
           text-transform: uppercase;
           letter-spacing: 0;
       }
-
       blockquote em {
           border-bottom: 2px dotted #858585;
       }
-
       blockquote + b {
           float: right;
           margin-top: 10px;
           font: 1.6em CallunaRegular;
           letter-spacing: .15em;
       }
-
       blockquote + b:first-letter {
           color: #fff79e;
           font-size: 1.3em;
           font-style: italic;
           letter-spacing: .25em;
       }
-
       @-moz-document url-prefix() { 
-
           blockquote:first-letter {
               margin-top: -29px;
           }
-
       }
 
+/* Spacing buttons on home page /////////////////////////////////////////////////////////////////////// */
 .buttons {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
 
+/* Styling buttons on home page /////////////////////////////////////////////////////////////// */ 
 .login {
    background-color: lightgray;
    color: #00802B;
    margin-right: 20px;
-   font-weight: bold;
+   /* font-weight: bold; */
    padding: 15px;
    width: 175px;
    font-size: 20px;
    text-align: center;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Lato', sans-serif;
    border-radius: 3px;
-   text-decoration:none; 
+   text-decoration: none; 
+}
+
+/* Login/Register page /////////////////////////////////////////////////////////////// */ 
+.loginpage {
+    text-align: center;
+}
+.logintitle {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
 }
