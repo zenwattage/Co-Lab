@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { } from 'react-router-dom'
 import axios from 'axios';
+import "./style.css"; 
 
-export default class Login extends Component {
+export default class Signup extends Component {
 
   state = {
     email: "",
@@ -14,7 +15,7 @@ export default class Login extends Component {
     event.preventDefault();
     const { email, password } = this.state;
     axios.post({
-      url: "/authentication/signin",
+      url: "/authentication/signup",
       method: "POST",
       data: {
         email,
@@ -22,7 +23,7 @@ export default class Login extends Component {
       }
     })
     .then((response) => {
-      this.props.history.push('/profile');
+      this.props.history.push('/profile'); 
     })
     .catch((error) => {
       this.setState({
@@ -41,12 +42,12 @@ export default class Login extends Component {
       // JSX
       return (
           <div>
-            <h1> Login Component </h1>
+            <h1> Signup Component </h1>
             <form onSubmit={this.handleSubmit}>
               <input type="text" name="email" onChange={this.handleChange} />
               <input type="password" name="password" onChange={this.handleChange} />
 
-              <button>Login</button>
+              <button>Signup</button>
             </form>
             <p>{this.state.errorMessage}</p>
           </div>
