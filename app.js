@@ -54,13 +54,12 @@ app.use(cookieSession({
   keys: ['key1', 'key2']
 }));
 
-
-app.use('/', indexRouter);
-app.use('/authentication', usersRouter);
-
 app.use(passport.initialize());
 //add coookie to browser
 app.use(passport.session());
+
+app.use('/', indexRouter);
+app.use('/authentication', usersRouter);
 
 
 app.listen(PORT, () =>
