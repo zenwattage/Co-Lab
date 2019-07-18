@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-import Profile from './components/Profile';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Home from './components/Home';
-import NotFound from './components/NotFound';
-import Dashboard from './components/Dashboard';
+import Profile from './components/Profile/Profile';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
+import Home from './components/Home/Home';
+import NotFound from './components/NotFound/NotFound';
+import Dashboard from './components/Dashboard/Dashboard';
 
 export default class App extends Component {
 
