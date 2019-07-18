@@ -30,6 +30,18 @@ var db = require('./models');
 
 db.UserProfile.create({
   Username: 'Russ',
+  Male: true,
+  Female: false,
+  Dancer: false,
+  Ballet: false,
+  HipHop: false,
+  Contemporary: false,
+  Latin: false,
+  Photographer: true,
+  Landscape: false,
+  Portrait: false,
+  Street: true,
+  Motion: false,
 })
 
 
