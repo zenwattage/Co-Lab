@@ -1,3 +1,7 @@
+.logo {
+    color: white;
+}
+
 @font-face {
   font-family: 'Sketch Block';
   src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot');
@@ -27,7 +31,11 @@
 
 body {
   background: rgb(73, 73, 73);
-  color: #fff;
+  color: #72CC7E;
+}
+
+.community {
+    color: lightgray;
 }
 
   .container {
@@ -38,13 +46,14 @@ body {
 
   blockquote {
       width: 565px;
-      font: 2.65em CallunaRegular;
+      font: 2.55em CallunaRegular;
       letter-spacing: .075em;
-      float: left;
-      padding: 45px 0 30px 25px;
+      /* float: left; */
+      padding: 45px 0px 30px 25px;
       margin: 0;
-      border-top: 2px dotted #858585;
-      border-bottom: 2px dotted #858585;
+      margin-top: 100px;
+      border-top: 2px dotted black;
+      border-bottom: 2px dotted black;
       -webkit-transform: rotate(-3deg);
       -moz-transform: rotate(-3deg);
   }
@@ -68,7 +77,7 @@ body {
 
       blockquote:first-line {
           font: 1.85em "Sketch Block";
-          color: #fff79e;
+          color: lightgray;
       }
 
       blockquote:first-letter {
@@ -117,3 +126,21 @@ body {
           }
 
       }
+
+.buttons {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.login {
+   background-color: lightgray;
+   color: #00802B;
+   margin-right: 20px;
+   font-weight: bold;
+   padding: 15px;
+   width: 175px;
+   font-size: 20px;
+   text-align: center;
+   font-family: 'Raleway', sans-serif;
+   border-radius: 3px;
+}
