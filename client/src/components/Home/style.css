@@ -59,7 +59,7 @@ body {
   }
 
   .container:before {
-      content: """;
+      content: "";
       font-size: 13em;
       position: absolute;
       left: -100px;
@@ -67,7 +67,7 @@ body {
   }
 
   .container:after {
-      content: """;
+      content: "";
       font-size: 13em;
       position: absolute;
       right: -100px;
