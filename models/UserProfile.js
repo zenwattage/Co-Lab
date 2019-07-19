@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 // Grab the schema constructor method from mongoose
 var Schema = mongoose.Schema;
 
+// Associate user to Profession to Medium to Traits
+
+
+
 // New Schema Object
 var UserProfileSchema = new Schema({
   // the show title will be a string, and a required field
