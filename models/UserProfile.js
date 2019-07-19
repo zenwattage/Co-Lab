@@ -10,8 +10,12 @@ var Schema = mongoose.Schema;
 
 // New Schema Object
 var UserProfileSchema = new Schema({
-  // the show title will be a string, and a required field
-  Username: {
+
+    Username: {
+    type: String,
+    required: true
+  },
+    Username: {
     type: String,
     required: true
   },
