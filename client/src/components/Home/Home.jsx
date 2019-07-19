@@ -16,8 +16,8 @@ export default class Home extends Component {
         </article>
 
         <div className="buttons">
-          <button type="button" className="login">Login</button>
-          <button type="button" className="login">Register</button>
+          <a type="button" className="login" href = "/login">Log In</a>
+          <a type="button" className="login" href = "/signup">Sign Up</a>
         </div>
       </div>
     );

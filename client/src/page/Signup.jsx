@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import "./style.css"; 
 
 export default class Signup extends Component {
 
@@ -39,13 +40,13 @@ export default class Signup extends Component {
     render() {
       // JSX
       return (
-          <div>
-            <h1> Signup Component </h1>
+        <div className="loginpage">
+            <h1 className="logintitle"> Sign up for CoLab </h1>
             <form onSubmit={this.handleSubmit}>
               <input type="text" name="email" onChange={this.handleChange} />
               <input type="password" name="password" onChange={this.handleChange} />
-
-              <button>Signup</button>
+              <br></br>
+              <button className="login">Sign Up</button>
             </form>
             <p>{this.state.errorMessage}</p>
           </div>
